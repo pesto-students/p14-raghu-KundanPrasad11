@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    label {
+      display: block;
+      width: 150px;
+      margin-bottom: 5px;
+    }
+
+    div {
+      display: flex;
+    }
+
+    input, textarea {
+      padding: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+    }
+
+    textarea {
+      height: 60px;
+    }
+
+    #picture {
+      padding: 0;
+      border: none;
+    }
+
+    .submit-button > input {
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
+  <title>Social Networking</title>
+</head>
+<body>
+  <h1>Join a social network</h1>
+
+  <form action="#" method="post" enctype="multipart/form-data">
+    <div>
+      <label for="fullName">Full name:</label>
+      <input type="text" id="fullName" name="fullName" required />
+    </div>
+
+    <div>
+      <label for="email">Email address:</label>
+      <input type="email" id="email" name="email" required />
+    </div>
+
+    <div>
+      <label for="about">About yourself:</label>
+      <textarea id="about" name="about" rows="3" cols="50"></textarea>
+    </div>
+
+    <div>
+      <label for="picture">Profile Picture:</label>
+      <input type="file" id="picture" name="picture" />
+    </div>
+
+    <div class="submit-button">
+      <input type="submit" value="Submit" />
+    </div>
+  </form>
+</body>
+</html>
