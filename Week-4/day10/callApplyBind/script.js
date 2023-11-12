@@ -18,6 +18,8 @@ class Calculator {
   }
 }
 
+//"ScientificCalculator" does mathematical operations like sum, difference,
+//multiply, divide, square, cube, power
 class ScientificCalculator extends Calculator {
   constructor() {
     super();

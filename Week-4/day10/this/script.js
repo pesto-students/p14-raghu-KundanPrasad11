@@ -18,7 +18,7 @@ class Student extends Person {
   }
 
   study() {
-    return `I am studying ${this.subject}.`;
+    return this.subject ? `I am studying ${this.subject}.` : `I don't study.`;
   }
 
 }

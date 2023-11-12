@@ -96,8 +96,12 @@ class CheckingAccount extends BankAccount {
     console.log(`Deposit of ${amount} complete, updated balance is ${this._balance}`)
   }
   withdraw(amount) {
-    this._balance -= amount;
-    console.log(`Withdrawal of ${amount} complete, updated balance is ${this._balance}`)
+    if (this.getBalance() >= amount) {
+      this._balance -= amount;
+      console.log(`Withdrawal of ${amount} complete, updated balance is ${this._balance}`);
+    } else {
+      console.log("Withdrawal failed. Insufficient balance.");
+    }
   }
 }
 
