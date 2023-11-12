@@ -1,0 +1,40 @@
+.content {
+  width: 580px;
+  height: 300px;
+  padding: 5px;
+  background: #f0f0f0;
+  border: 2px solid blue;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: blue;
+  font-style: italic;
+}
+
+.yellow {
+  background: yellow;
+  width: 200px;
+  padding: 10px;
+  margin-right: 10px;
+  float: left;
+}
+
+.orange {
+  background: orange;
+  position: absolute;
+  top: 200px;
+  left: 110px;
+  width: 200px;
+  padding: 10px;
+}
+
+.tomato {
+  background: rgb(255, 80, 0);
+  color: white;
+  float: right;
+  width: 200px;
+  padding: 10px;
+  margin: 20px 40px 0 0;
+  word-wrap: break-word;
+}
